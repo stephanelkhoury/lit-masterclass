@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lit Integration Examples</title>
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <script type="module" src="/src/index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Integration Examples</h1>
+        <p>Using Lit components with various frameworks</p>
+    </header>
+    
+    <main>
+        <section class="container">
+            <h2>Product Showcase Component</h2>
+            <p>This component demonstrates how Lit can be used across different frameworks.</p>
+            
+            <div class="example-wrapper">
+                <product-showcase></product-showcase>
+            </div>
+            
+            <div class="framework-sections">
+                <h2>Integration Examples</h2>
+                
+                <div class="framework-section">
+                    <h3>React Integration</h3>
+                    <p>The React integration example shows how to use Lit components in a React application.</p>
+                    <a href="./react-integration/" class="framework-link">
+                        <img src="/images/react-logo.svg" alt="React Logo" class="framework-logo">
+                        <span>View React Example</span>
+                    </a>
+                </div>
+                
+                <div class="framework-section">
+                    <h3>Vue Integration</h3>
+                    <p>The Vue integration example shows how to use Lit components in a Vue application.</p>
+                    <a href="./vue-integration/" class="framework-link">
+                        <img src="/images/vue-logo.svg" alt="Vue Logo" class="framework-logo">
+                        <span>View Vue Example</span>
+                    </a>
+                </div>
+                
+                <div class="framework-section">
+                    <h3>Angular Integration</h3>
+                    <p>The Angular integration example shows how to use Lit components in an Angular application.</p>
+                    <a href="./angular-integration/" class="framework-link">
+                        <img src="/images/angular-logo.svg" alt="Angular Logo" class="framework-logo">
+                        <span>View Angular Example</span>
+                    </a>
+                </div>
+                
+                <div class="framework-section">
+                    <h3>Vanilla JS Integration</h3>
+                    <p>The Vanilla JS integration example shows how to use Lit components in a plain JavaScript application.</p>
+                    <a href="./vanilla-integration/" class="framework-link">
+                        <img src="/images/javascript-logo.svg" alt="JavaScript Logo" class="framework-logo">
+                        <span>View Vanilla JS Example</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="implementation-notes">
+                <h3>Implementation Notes</h3>
+                <p>Each integration example follows the same pattern:</p>
+                <ul>
+                    <li>Import the Lit component</li>
+                    <li>Register it with the framework or use it directly</li>
+                    <li>Pass data to the component</li>
+                    <li>Handle events from the component</li>
+                </ul>
+                <p>The product showcase component is framework-agnostic and reused across all examples.</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Lit Masterclass - Module 6</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<div class="angular-app">
+  <div class="intro">
+    <h2>Angular + Lit Integration</h2>
+    <p>
+      This example shows how to use Lit Web Components in an Angular application.
+      The product showcase below is a Lit component, but it's wrapped in an Angular component
+      to handle inputs and outputs in an Angular-friendly way.
+    </p>
+  </div>
+  
+  <div class="angular-example">
+    <app-product-showcase-angular
+      [product]="product"
+      (addToCart)="handleAddToCart($event)"
+      (wishlistChange)="handleWishlistChange($event)"
+      (configChange)="handleConfigChange($event)">
+    </app-product-showcase-angular>
+  </div>
+  
+  <div class="angular-actions">
+    <h3>Angular Application State:</h3>
+    
+    <div class="state-section">
+      <h4>Cart Items ({{ cartItems.length }})</h4>
+      <ul *ngIf="cartItems.length > 0">
+        <li *ngFor="let item of cartItems; let i = index">
+          {{ item.quantity }}x {{ item.name }} ({{ item.size }}) - ${{ (item.price * item.quantity).toFixed(2) }}
+        </li>
+      </ul>
+      <p *ngIf="cartItems.length === 0">No items in cart</p>
+    </div>
+    
+    <div class="state-section">
+      <h4>Wishlist Items ({{ wishlistItems.length }})</h4>
+      <ul *ngIf="wishlistItems.length > 0">
+        <li *ngFor="let id of wishlistItems; let i = index">
+          Product ID: {{ id }}
+        </li>
+      </ul>
+      <p *ngIf="wishlistItems.length === 0">No items in wishlist</p>
+    </div>
+    
+    <div *ngIf="lastAction" class="last-action">
+      <h4>Last Action:</h4>
+      <pre>{{ lastAction | json }}</pre>
+    </div>
+  </div>
+</div>

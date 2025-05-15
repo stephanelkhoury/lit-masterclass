@@ -1,0 +1,140 @@
+/* Main CSS for Module 6: Integration Examples */
+:root {
+  --primary-color: #2e7d32;
+  --secondary-color: #0288d1;
+  --accent-color: #f57c00;
+  --text-color: #333;
+  --light-bg: #f5f5f5;
+  --border-radius: 8px;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --card-bg: white;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-bg);
+}
+
+header, footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: var(--primary-color);
+  margin: 2rem 0 1rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  color: var(--secondary-color);
+  margin: 1.5rem 0 0.5rem;
+}
+
+.example-wrapper {
+  background-color: white;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+
+.framework-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.framework-section {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s;
+}
+
+.framework-section:hover {
+  transform: translateY(-5px);
+}
+
+.framework-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--secondary-color);
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: var(--border-radius);
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.framework-link:hover {
+  background-color: #f9f9f9;
+}
+
+.framework-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+
+.implementation-notes {
+  background-color: #e8f5e9;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  margin: 2rem 0;
+}
+
+.implementation-notes ul {
+  padding-left: 1.5rem;
+}
+
+.implementation-notes li {
+  margin-bottom: 0.5rem;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button.secondary {
+  background-color: var(--secondary-color);
+}
+
+button.accent {
+  background-color: var(--accent-color);
+}

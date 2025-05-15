@@ -1,0 +1,11 @@
+.angular-wrapper {
+  margin-bottom: 20px;
+}
+
+.angular-state-display {
+  background-color: #f3f3f3;
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 20px;
+  border-left: 4px solid #dd0031; /* Angular color */
+}

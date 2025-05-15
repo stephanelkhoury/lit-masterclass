@@ -1,0 +1,219 @@
+:root {
+  /* Default theme variables */
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Default Theme */
+.theme-default {
+  --primary-color: #4f46e5;
+  --secondary-color: #10b981;
+  --background-color: #f9fafb;
+  --surface-color: #ffffff;
+  --text-color: #1f2937;
+  --text-secondary-color: #4b5563;
+  --border-color: #e5e7eb;
+  
+  /* Button theming */
+  --button-primary-bg-color: #4f46e5;
+  --button-primary-text-color: white;
+  --button-primary-hover-bg-color: #4338ca;
+  --button-secondary-bg-color: #10b981;
+  --button-secondary-text-color: white;
+  --button-secondary-hover-bg-color: #059669;
+  --button-danger-bg-color: #ef4444;
+  --button-danger-text-color: white;
+  --button-danger-hover-bg-color: #dc2626;
+  
+  /* Card theming */
+  --card-bg-color: white;
+  --card-divider: 1px solid #e5e7eb;
+  
+  /* Grid theming */
+  --grid-item-bg: #f3f4f6;
+  --grid-item-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Theme */
+.theme-dark {
+  --primary-color: #3b82f6;
+  --secondary-color: #10b981;
+  --background-color: #1e293b;
+  --surface-color: #0f172a;
+  --text-color: #f1f5f9;
+  --text-secondary-color: #cbd5e1;
+  --border-color: #334155;
+  
+  /* Button theming */
+  --button-primary-bg-color: #3b82f6;
+  --button-primary-text-color: white;
+  --button-primary-hover-bg-color: #2563eb;
+  --button-secondary-bg-color: #10b981;
+  --button-secondary-text-color: white;
+  --button-secondary-hover-bg-color: #059669;
+  --button-danger-bg-color: #ef4444;
+  --button-danger-text-color: white;
+  --button-danger-hover-bg-color: #dc2626;
+  
+  /* Card theming */
+  --card-bg-color: #1e293b;
+  --card-divider: 1px solid #334155;
+  
+  /* Grid theming */
+  --grid-item-bg: #334155;
+  --grid-item-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Light Theme */
+.theme-light {
+  --primary-color: #6366f1;
+  --secondary-color: #0ea5e9;
+  --background-color: #ffffff;
+  --surface-color: #f8fafc;
+  --text-color: #0f172a;
+  --text-secondary-color: #475569;
+  --border-color: #e2e8f0;
+  
+  /* Button theming */
+  --button-primary-bg-color: #6366f1;
+  --button-primary-text-color: white;
+  --button-primary-hover-bg-color: #4f46e5;
+  --button-secondary-bg-color: #0ea5e9;
+  --button-secondary-text-color: white;
+  --button-secondary-hover-bg-color: #0284c7;
+  --button-danger-bg-color: #ef4444;
+  --button-danger-text-color: white;
+  --button-danger-hover-bg-color: #dc2626;
+  
+  /* Card theming */
+  --card-bg-color: #ffffff;
+  --card-divider: 1px solid #e2e8f0;
+  
+  /* Grid theming */
+  --grid-item-bg: #f8fafc;
+  --grid-item-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Nature Theme */
+.theme-nature {
+  --primary-color: #166534;
+  --secondary-color: #65a30d;
+  --background-color: #f0fdf4;
+  --surface-color: #ffffff;
+  --text-color: #14532d;
+  --text-secondary-color: #3f6212;
+  --border-color: #dcfce7;
+  
+  /* Button theming */
+  --button-primary-bg-color: #166534;
+  --button-primary-text-color: white;
+  --button-primary-hover-bg-color: #15803d;
+  --button-secondary-bg-color: #65a30d;
+  --button-secondary-text-color: white;
+  --button-secondary-hover-bg-color: #4d7c0f;
+  --button-danger-bg-color: #b91c1c;
+  --button-danger-text-color: white;
+  --button-danger-hover-bg-color: #991b1b;
+  
+  /* Card theming */
+  --card-bg-color: #ffffff;
+  --card-divider: 1px solid #dcfce7;
+  
+  /* Grid theming */
+  --grid-item-bg: #dcfce7;
+  --grid-item-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Sunset Theme */
+.theme-sunset {
+  --primary-color: #7c2d12;
+  --secondary-color: #ea580c;
+  --background-color: #ffedd5;
+  --surface-color: #ffffff;
+  --text-color: #7c2d12;
+  --text-secondary-color: #9a3412;
+  --border-color: #fed7aa;
+  
+  /* Button theming */
+  --button-primary-bg-color: #7c2d12;
+  --button-primary-text-color: white;
+  --button-primary-hover-bg-color: #9a3412;
+  --button-secondary-bg-color: #ea580c;
+  --button-secondary-text-color: white;
+  --button-secondary-hover-bg-color: #c2410c;
+  --button-danger-bg-color: #b91c1c;
+  --button-danger-text-color: white;
+  --button-danger-hover-bg-color: #991b1b;
+  
+  /* Card theming */
+  --card-bg-color: #ffffff;
+  --card-divider: 1px solid #fed7aa;
+  
+  /* Grid theming */
+  --grid-item-bg: #fed7aa;
+  --grid-item-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Base styles */
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  transition: background-color 0.3s ease;
+}
+
+header, footer {
+  text-align: center;
+  padding: var(--spacing-lg) 0;
+}
+
+header h1 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-xs);
+}
+
+header p {
+  color: var(--text-secondary-color);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+h2 {
+  color: var(--primary-color);
+  margin: var(--spacing-xl) 0 var(--spacing-md);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: var(--spacing-sm);
+}
+
+.component-showcase {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Demo grid items */
+.grid-item {
+  padding: var(--spacing-lg);
+  font-weight: 500;
+  text-align: center;
+}

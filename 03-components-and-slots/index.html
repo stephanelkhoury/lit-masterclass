@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Components and Slots in Lit</title>
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <script type="module" src="/src/index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Components and Slots</h1>
+        <p>Learn about component composition and content projection with slots</p>
+    </header>
+    
+    <main>
+        <section class="container">
+            <h2>Card Component Demo</h2>
+            <div class="card-examples">
+                <lit-card title="Basic Card">
+                    <p>This is a basic card with default slot content.</p>
+                </lit-card>
+                
+                <lit-card title="Card with Media">
+                    <img slot="media" src="/images/sample-image.jpg" alt="Sample Image">
+                    <p>This card has an image in the media slot.</p>
+                    <div slot="actions">
+                        <button>Like</button>
+                        <button>Share</button>
+                    </div>
+                </lit-card>
+                
+                <lit-card title="Card with Actions">
+                    <p>This card has custom action buttons.</p>
+                    <div slot="actions">
+                        <lit-button>Save</lit-button>
+                        <lit-button variant="outlined">Cancel</lit-button>
+                    </div>
+                    <p slot="footer">Last updated: May 15, 2025</p>
+                </lit-card>
+            </div>
+            
+            <h2 class="mt-4">Tabs Example</h2>
+            <lit-tabs></lit-tabs>
+            <lit-panel>
+                <div slot="tab1">
+                    <h3>Tab 1 Content</h3>
+                    <p>This is the content for the first tab. It demonstrates how to use named slots with a tabbed interface.</p>
+                </div>
+                <div slot="tab2">
+                    <h3>Tab 2 Content</h3>
+                    <p>Content for the second tab. Tabs are implemented using named slots and event handling.</p>
+                </div>
+                <div slot="tab3">
+                    <h3>Tab 3 Content</h3>
+                    <p>This tab shows how to handle slot changes and updates when the selected tab changes.</p>
+                </div>
+            </lit-panel>
+            
+            <h2 class="mt-4">Slot Demonstration</h2>
+            <slot-demo>
+                <h3 slot="header">Custom Header Content</h3>
+                <p>This is content in the default slot.</p>
+                <div slot="custom">
+                    <p>This is content for the <b>custom</b> named slot.</p>
+                    <lit-button variant="text">A Slotted Button</lit-button>
+                </div>
+                <p slot="footer">Custom footer content goes here.</p>
+            </slot-demo>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Lit Masterclass - Module 3</p>
+    </footer>
+</body>
+</html>

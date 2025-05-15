@@ -1,0 +1,14 @@
+<div class="angular-wrapper">
+  <!-- Angular event bindings don't work with custom elements, 
+       so we handle events via addEventListener in the TS file -->
+  <product-showcase #productComponent></product-showcase>
+  
+  <!-- Display the current state from Angular's perspective -->
+  <div class="angular-state-display">
+    <h3>Angular Component State:</h3>
+    <p><strong>Selected Color:</strong> {{ selectedColor }}</p>
+    <p><strong>Selected Size:</strong> {{ selectedSize }}</p>
+    <p><strong>Quantity:</strong> {{ quantity }}</p>
+    <p><strong>In Wishlist:</strong> {{ inWishlist ? 'Yes' : 'No' }}</p>
+  </div>
+</div>

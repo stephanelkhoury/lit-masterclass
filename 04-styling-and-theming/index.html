@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling and Theming in Lit</title>
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <script type="module" src="/src/index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Styling and Theming</h1>
+        <p>Learn about Shadow DOM styling, CSS custom properties, and creating themable components</p>
+    </header>
+    
+    <main>
+        <section class="container">
+            <h2>Theme Selector</h2>
+            <theme-selector></theme-selector>
+            
+            <h2>Themable Components</h2>
+            <div class="component-showcase">
+                <themed-button>Default Button</themed-button>
+                <themed-button variant="primary">Primary Button</themed-button>
+                <themed-button variant="secondary">Secondary Button</themed-button>
+                <themed-button variant="danger">Danger Button</themed-button>
+            </div>
+            
+            <h2>Component with Parts</h2>
+            <themed-card>
+                <h3 slot="header">Card Title</h3>
+                <p>This card component exposes parts that can be styled from outside.</p>
+                <div slot="footer">
+                    <themed-button variant="primary">Learn More</themed-button>
+                </div>
+            </themed-card>
+            
+            <h2>Responsive Components</h2>
+            <responsive-grid>
+                <div class="grid-item">Item 1</div>
+                <div class="grid-item">Item 2</div>
+                <div class="grid-item">Item 3</div>
+                <div class="grid-item">Item 4</div>
+            </responsive-grid>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Lit Masterclass - Module 4</p>
+    </footer>
+</body>
+</html>

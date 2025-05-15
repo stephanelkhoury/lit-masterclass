@@ -1,0 +1,27 @@
+{
+  "name": "lit-masterclass-getting-started",
+  "version": "1.0.0",
+  "description": "Getting started with Lit",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "web-test-runner \"src/**/*.test.js\" --node-resolve"
+  },
+  "keywords": [
+    "lit",
+    "web-components",
+    "javascript"
+  ],
+  "author": "Stephan El Khoury",
+  "license": "MIT",
+  "dependencies": {
+    "lit": "^2.7.0"
+  },
+  "devDependencies": {
+    "@web/dev-server-esbuild": "^0.4.0",
+    "@web/test-runner": "^0.16.0",
+    "vite": "^4.3.0"
+  }
+}

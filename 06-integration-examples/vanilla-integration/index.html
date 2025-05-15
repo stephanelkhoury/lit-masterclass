@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lit + Vanilla JS Integration Example</title>
+    <link rel="stylesheet" href="../src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lit + Vanilla JS Integration</h1>
+        <p>Using Lit components in a vanilla JavaScript application</p>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="vanilla-app" id="vanilla-app">
+                <div class="intro">
+                    <h2>Vanilla JS + Lit Integration</h2>
+                    <p>
+                        This example shows how to use Lit Web Components in a vanilla JavaScript application.
+                        The product showcase below is a Lit component, interacting with pure JavaScript.
+                    </p>
+                </div>
+                
+                <div class="vanilla-example" id="product-container">
+                    <!-- Product showcase will be inserted here -->
+                </div>
+                
+                <div class="vanilla-actions">
+                    <h3>Vanilla JS Application State:</h3>
+                    
+                    <div class="state-section">
+                        <h4>Cart Items (<span id="cart-count">0</span>)</h4>
+                        <div id="cart-items">
+                            <p>No items in cart</p>
+                        </div>
+                    </div>
+                    
+                    <div class="state-section">
+                        <h4>Wishlist Items (<span id="wishlist-count">0</span>)</h4>
+                        <div id="wishlist-items">
+                            <p>No items in wishlist</p>
+                        </div>
+                    </div>
+                    
+                    <div class="state-section">
+                        <h4>Component State:</h4>
+                        <div id="component-state">
+                            <p><strong>Selected Color:</strong> <span id="selected-color">None</span></p>
+                            <p><strong>Selected Size:</strong> <span id="selected-size">None</span></p>
+                            <p><strong>Quantity:</strong> <span id="quantity">1</span></p>
+                            <p><strong>In Wishlist:</strong> <span id="in-wishlist">No</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="last-action" id="last-action-container" style="display: none;">
+                        <h4>Last Action:</h4>
+                        <pre id="last-action"></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Lit Masterclass - Module 6</p>
+    </footer>
+    
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>

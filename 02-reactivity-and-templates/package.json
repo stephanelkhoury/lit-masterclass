@@ -1,0 +1,25 @@
+{
+  "name": "lit-reactivity-and-templates",
+  "version": "1.0.0",
+  "description": "Exploring reactivity and templates in Lit",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "lit",
+    "web-components",
+    "reactivity",
+    "templates"
+  ],
+  "author": "Stephan El Khoury",
+  "license": "MIT",
+  "dependencies": {
+    "lit": "^2.7.0"
+  },
+  "devDependencies": {
+    "vite": "^4.3.0"
+  }
+}

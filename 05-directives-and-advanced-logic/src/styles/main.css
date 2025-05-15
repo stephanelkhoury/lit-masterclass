@@ -1,0 +1,176 @@
+/* Main CSS for Module 5: Directives and Advanced Logic */
+:root {
+  --primary-color: #6200ea;
+  --secondary-color: #00c853;
+  --accent-color: #ff3d00;
+  --text-color: #333;
+  --light-bg: #f5f5f5;
+  --border-radius: 8px;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --card-bg: white;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-bg);
+}
+
+header, footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: var(--primary-color);
+  margin: 2rem 0 1rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  color: var(--primary-color);
+  margin: 1.5rem 0 0.5rem;
+}
+
+h4 {
+  margin: 1rem 0 0.5rem;
+  color: var(--secondary-color);
+}
+
+.dashboard {
+  margin-bottom: 3rem;
+}
+
+.examples {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.example {
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.3s;
+  margin: 0.25rem;
+}
+
+button:hover {
+  background-color: #5000d3;
+}
+
+button.secondary {
+  background-color: var(--secondary-color);
+}
+
+button.secondary:hover {
+  background-color: #00b34a;
+}
+
+button.accent {
+  background-color: var(--accent-color);
+}
+
+button.accent:hover {
+  background-color: #e53700;
+}
+
+/* Card styles for the dashboard */
+.data-card {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.data-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: rgba(98, 0, 234, 0.05);
+  border-radius: var(--border-radius);
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1.5rem;
+}
+
+.filter-group label {
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+  color: var(--primary-color);
+}
+
+select, input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.highlight {
+  background-color: #fff176;
+  padding: 0 2px;
+  border-radius: 2px;
+}

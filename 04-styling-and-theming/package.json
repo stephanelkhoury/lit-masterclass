@@ -1,0 +1,26 @@
+{
+  "name": "lit-styling-and-theming",
+  "version": "1.0.0",
+  "description": "Styling and theming in Lit components",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "lit",
+    "web-components",
+    "css",
+    "theming",
+    "styling"
+  ],
+  "author": "Stephan El Khoury",
+  "license": "MIT",
+  "dependencies": {
+    "lit": "^2.7.0"
+  },
+  "devDependencies": {
+    "vite": "^4.3.0"
+  }
+}

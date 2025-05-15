@@ -1,0 +1,25 @@
+{
+  "name": "lit-directives-and-advanced-logic",
+  "version": "1.0.0",
+  "description": "Directives and advanced control flow in Lit",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "lit",
+    "web-components",
+    "directives"
+  ],
+  "author": "Stephan El Khoury",
+  "license": "MIT",
+  "dependencies": {
+    "lit": "^2.7.0",
+    "@lit/task": "^1.0.0"
+  },
+  "devDependencies": {
+    "vite": "^4.3.0"
+  }
+}
