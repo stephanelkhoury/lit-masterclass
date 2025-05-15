@@ -147,14 +147,21 @@ describe('TodoList Component', () => {
     it('removes a todo when using the removeTodo method', async () => {
       const el = await fixture(html`<todo-list></todo-list>`);
       
+      // Initialize with empty array to ensure consistent starting point
+      el.todos = [];
+      await el.updateComplete;
+      
       // Add two todos
       const todo1 = el.addTodo('Remove Test 1');
       const todo2 = el.addTodo('Remove Test 2');
+      await el.updateComplete;
       
+      // Should have two todos
       expect(el.todos.length).to.equal(2);
       
       // Remove the first todo
       el.removeTodo(todo1.id);
+      await el.updateComplete;
       
       // Should have one todo remaining
       expect(el.todos.length).to.equal(1);

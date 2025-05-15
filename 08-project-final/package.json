@@ -10,7 +10,8 @@
     "test": "web-test-runner test/**/*.test.js --node-resolve",
     "test:watch": "web-test-runner test/**/*.test.js --node-resolve --watch",
     "lint": "eslint src/**/*.js",
-    "format": "prettier --write src/**/*.{js,css,html}"
+    "format": "prettier --write src/**/*.{js,css,html}",
+    "charts": "vite --open charts-demo.html"
   },
   "keywords": [
     "lit",
@@ -23,7 +24,6 @@
     "lit": "^2.7.0",
     "@lit/context": "^1.0.0",
     "@lit/task": "^1.0.0",
-    "chart.js": "^4.0.0",
     "date-fns": "^2.30.0"
   },
   "devDependencies": {

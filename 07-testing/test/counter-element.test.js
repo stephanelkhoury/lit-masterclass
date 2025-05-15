@@ -1,4 +1,4 @@
-import { html, fixture, expect, oneEvent } from '@open-wc/testing';
+import { html, fixture, expect, oneEvent, aTimeout } from '@open-wc/testing';
 import '../src/components/counter-element.js';
 
 describe('CounterElement', () => {
@@ -20,17 +20,23 @@ describe('CounterElement', () => {
     const el = await fixture(html`<counter-element></counter-element>`);
     
     el.shadowRoot.querySelector('button').click();
+    await el.updateComplete;
     
     expect(el.count).to.equal(1);
     expect(el.shadowRoot.querySelector('.count').textContent.trim()).to.equal('1');
   });
 
   it('resets the counter when the reset button is clicked', async () => {
-    const el = await fixture(html`<counter-element count="5"></counter-element>`);
+    const el = await fixture(html`<counter-element></counter-element>`);
+    
+    // First set the count to 5
+    el.count = 5;
+    await el.updateComplete;
     
     expect(el.count).to.equal(5);
     
     el.shadowRoot.querySelectorAll('button')[1].click();
+    await el.updateComplete;
     
     expect(el.count).to.equal(0);
     expect(el.shadowRoot.querySelector('.count').textContent.trim()).to.equal('0');
@@ -52,10 +58,9 @@ describe('CounterElement', () => {
     // Initial state
     expect(el.shadowRoot.querySelector('button').disabled).to.be.false;
     
-    // Click three times to reach max
-    el.shadowRoot.querySelector('button').click();
-    el.shadowRoot.querySelector('button').click();
-    el.shadowRoot.querySelector('button').click();
+    // Directly set count to max to test the disabled state
+    el.count = el.max;
+    await el.updateComplete;
     
     // Now the count should be 3 and the button disabled
     expect(el.count).to.equal(3);

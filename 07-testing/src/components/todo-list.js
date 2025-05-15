@@ -143,11 +143,15 @@ export class TodoList extends LitElement {
    * @param {string} text - Text for the new todo
    * @returns {object} The newly created todo object
    */
+  // Counter to ensure unique IDs for all todos
+  static #idCounter = 1;
+  
   addTodo(text) {
     if (!text.trim()) return null;
     
+    // Use combination of timestamp and an incrementing counter for unique IDs
     const newTodo = {
-      id: Date.now(),
+      id: Date.now() + TodoList.#idCounter++,
       text,
       completed: false
     };

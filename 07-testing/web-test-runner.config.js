@@ -22,9 +22,7 @@ export default {
   },
 
   // Coverage settings
-  coverage: {
-    exclude: ['**/node_modules/**/*', '**/test/**/*']
-  },
+  coverage: true,
   
   // Serve files from this directory
   nodeResolve: true,
